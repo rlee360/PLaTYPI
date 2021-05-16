@@ -14,5 +14,5 @@ The main benefit of such a project is to predict locations for new corn farms in
 ## Proposed Model:
 ![model](/model.png)
 
-## Resulting Pixel-wise map of Calhoun, Iowa for current crop locations
+## Resulting pixel-wise map for current crop locations in Calhoun, Iowa 2015
 ![yield prediction for Calhoun, Iowa](/crop_valid_2.png)
