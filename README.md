@@ -11,6 +11,11 @@ The main benefit of such a project is to predict locations for new corn farms in
 * Remaining unbiased by current crops and landscape
 * Generating pixel-wise maps from coarse county-wise yield data
 
+**Used Data:**
+* [Yield: Historical Corn Yields by County in Iowa](https://www.extension.iastate.edu/agdm/crops/pdf/a1-12.pdf) - Reproduced as csv in [yield.csv](https://github.com/rlee360/PLaTYPI/blob/master/yield.csv)
+* [Daymet V4: Daily Surface Weather and Climatological Summaries](https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_DAYMET_V4)
+* [ERA5 Daily aggregates - Latest climate reanalysis produced by ECMWF / Copernicus Climate Change Service](https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_DAILY?hl=en)
+
 ## Proposed Model:
 ![model](/model.png)
 
