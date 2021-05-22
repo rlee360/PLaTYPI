@@ -25,12 +25,6 @@ The main benefit of such a project is to predict locations for new corn farms in
 * [Daymet V4: Daily Surface Weather and Climatological Summaries](https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_DAYMET_V4)
 * [ERA5 Daily aggregates - Latest climate reanalysis produced by ECMWF / Copernicus Climate Change Service](https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_DAILY?hl=en)
 
-**Primary Tools:**
-* Google Earth Engine Python API
-* Numpy
-* Multiprocessing 
-* 
-
 ## Results
 
 || MAE | MSE|
