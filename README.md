@@ -16,7 +16,6 @@ The goal of this work is to predict locations that, should corn be planted there
 
 The main benefit of such a project is to predict locations for new corn farms in order to maximize yield. The tool can also be used to analyze current corn farm locations and predict how much yield the farm generates (in bushels/acre). This is important in order to identify under/over-performing farms and farm locations for investments of any future yield analysis. 
 
-
 **Two main concerns are addressed:**
 * Remaining unbiased by current crops and landscape
 * Generating pixel-wise maps from coarse county-wise yield data
@@ -25,6 +24,12 @@ The main benefit of such a project is to predict locations for new corn farms in
 * [Yield: Historical Corn Yields by County in Iowa](https://www.extension.iastate.edu/agdm/crops/pdf/a1-12.pdf) - Reproduced as csv in [yield.csv](https://github.com/rlee360/PLaTYPI/blob/master/yield.csv)
 * [Daymet V4: Daily Surface Weather and Climatological Summaries](https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_DAYMET_V4)
 * [ERA5 Daily aggregates - Latest climate reanalysis produced by ECMWF / Copernicus Climate Change Service](https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_DAILY?hl=en)
+
+**Primary Tools:**
+* Google Earth Engine Python API
+* Numpy
+* Multiprocessing 
+* 
 
 ## Results
 
@@ -40,12 +45,28 @@ The main benefit of such a project is to predict locations for new corn farms in
   <sup>Pixel-wise yield prediction (in bushels/acre) for Calhoun, Iowa using 2015 data</sup>
 </p>
 
+## Code File Breakdown:
+* **download_from_ee.py -**
+Parallelizes file download from google earth engine - loops over year, image collection, county and downloads
+* **counties.py -**
+returns the FPS code for each county in Iowa in a dict (FPS code: county)
+* **make_hists.py -**
+For each county-year pair downloaded, generates a spatial-temporal histogram of the data
+* **make_one_county.py -**
+For testing, generates a temporal histogram for each pixel in a specified county-year pair
+* **Masked_Yield_Prediction_PoC.ipynb -**
+Takes yield data and histogram, preprocesses data, generates and trains a tf model (see proposed model), saves model, and then evaluates model on one-county's pixel-wise temporal histograms
+* **proof_of_concept.ipynb -**
+An attempt to create histograms directly from google earth engine API - NOT FUNCTIONING
+* **proof_of_concept_2.ipynb -**
+Another attempt to to create histograms directly from google earth engine API, somewhat limited and slow (and susceptible to crs of image collections). 
 
-
-## Proposed Model:
 <p align="center">
   <img src='/model.png' alt='proposed model' width=480>
   <br>
   <sup>Proposed model plotted</sup> 
 </p>
+
+
+
 
