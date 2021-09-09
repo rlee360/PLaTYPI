@@ -1,6 +1,6 @@
 ![Python 3.7](https://img.shields.io/badge/python-3.7-green.svg)
 
-# SPACY - Satellite Prediction of Aggregate Corn Yield
+# SPACY - Satellite Prediction of Aggregate Crop Yield
 ****ECE471 Final Project: Crop Yield Prediction****
 
 Presentation: [ppt](https://github.com/rlee360/PLaTYPI/blob/master/SPACY_%20Satellite%20Prediction%20of%20Aggregate%20Corn%20Yield.pptx)
@@ -12,7 +12,7 @@ It is authored by [Richard Lee](https://github.com/rlee360) and [Yuval Ofek](htt
 
 ## Introduction:
 
-The goal of this work is to predict locations that, should corn be planted there, increase aggregate yield without being biased by current crop locations. 
+The goal of this work is to predict locations that, should corn be planted there, increase aggregate yield without being biased by current crop locations. The work outlined in this repository is a proof of concept of such a method, using aggregate corn yield data from Iowa.
 
 The main benefit of such a project is to predict locations for new corn farms in order to maximize yield. The tool can also be used to analyze current corn farm locations and predict how much yield the farm generates (in bushels/acre). This is important in order to identify under/over-performing farms and farm locations for investments of any future yield analysis. 
 
@@ -53,17 +53,11 @@ For each county-year pair downloaded, generates a spatial-temporal histogram of 
 * **make_one_county.py -**
 For testing, generates a temporal histogram for each pixel in a specified county-year pair
 * **Masked_Yield_Prediction_PoC.ipynb -**
-Takes yield data and histogram, preprocesses data, generates and trains a tf model (see proposed model), saves model, and then evaluates model on one-county's pixel-wise temporal histograms
+Takes yield data and histogram, preprocesses data, generates and trains a tf model, saves model, and then evaluates model on one-county's pixel-wise temporal histograms
 * **proof_of_concept.ipynb -**
 An attempt to create histograms directly from google earth engine API - NOT FUNCTIONING
 * **proof_of_concept_2.ipynb -**
 Another attempt to to create histograms directly from google earth engine API, somewhat limited and slow (and susceptible to crs of image collections). 
-
-<p align="center">
-  <img src='/model.png' alt='proposed model' width=480>
-  <br>
-  <sup>Proposed model plotted</sup> 
-</p>
 
 
 
