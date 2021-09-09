@@ -1,6 +1,6 @@
 ![Python 3.7](https://img.shields.io/badge/python-3.7-green.svg)
 
-# SPACY - Satellite Prediction of Aggregate Crop Yield
+# SPPACY - Satellite Prediction of Pixel-wise  Aggregate Crop Yield
 ****ECE471 Final Project: Crop Yield Prediction****
 
 Presentation: [ppt](https://github.com/rlee360/PLaTYPI/blob/master/SPACY_%20Satellite%20Prediction%20of%20Aggregate%20Corn%20Yield.pptx)
