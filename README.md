@@ -7,7 +7,7 @@ Presentation: [ppt](https://github.com/rlee360/PLaTYPI/blob/master/SPACY_%20Sate
 
 Report: [report](https://github.com/rlee360/PLaTYPI/blob/master/ECE471_Final_Paper.pdf)
 
-[SPACY](https://github.com/rlee360/PLaTYPI) is a tool to predict pixel-wise corn yield independently of current land cover usage through the use of histograms. 
+SPPACY is a tool to predict pixel-wise corn yield independently of current land cover usage through the use of histograms. 
 It is authored by [Richard Lee](https://github.com/rlee360) and [Yuval Ofek](https://github.com/yuvalofek). 
 
 ## Introduction:
