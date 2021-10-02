@@ -25,9 +25,11 @@ Google Earth Engine Python API, Rasterio, TensorFlow, Geemap, Multiprocessing, N
 
 
 ## Data
-* [Yield: Historical Corn Yields by County in Iowa](https://www.extension.iastate.edu/agdm/crops/pdf/a1-12.pdf) - Reproduced as csv in [yield.csv](https://github.com/rlee360/PLaTYPI/blob/master/yield.csv)
+* [Yield: Historical Corn Yields by County in Iowa](https://www.extension.iastate.edu/agdm/crops/pdf/a1-12.pdf) - Reproduced as csv in [yield.csv](https://github.com/rlee360/PLaTYPI/blob/master/yield.csv) and visualized bellow. 
 * [Daymet V4: Daily Surface Weather and Climatological Summaries](https://developers.google.com/earth-engine/datasets/catalog/NASA_ORNL_DAYMET_V4)
 * [ERA5 Daily aggregates - Latest climate reanalysis produced by ECMWF / Copernicus Climate Change Service](https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_DAILY?hl=en)
+
+![Visualization of the Corn Yield Dataset](https://github.com/yuvalofek/SPPPACY/blob/master//CornYieldVis.jpg)
 
 ## Results
 ### Comparison to baseline
