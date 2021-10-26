@@ -10,7 +10,21 @@ Report: [report](https://github.com/rlee360/PLaTYPI/blob/master/ECE471_Final_Pap
 SPPACY is a tool to predict pixel-wise corn yield independently of current land cover usage through the use of histograms. 
 It is authored by [Richard Lee](https://github.com/rlee360) and [Yuval Ofek](https://github.com/yuvalofek). 
 
-## Introduction:
+## Results
+### Comparison to baseline
+|| MAE | MSE|
+| --- | --- | --- |
+| Baseline| 20.637 | 734.300  |
+| Ours    | 10.703 | 203.604  |
+
+### Pixel-wise yield prediction for counties
+<p align="center">
+  <img src='/crop_valid_2.png' alt='pixel-wise yield prediction for Calhoun, Iowa, in 2015' width=480>
+  <br>
+  <sup>Pixel-wise yield prediction (in bushels/acre) for Calhoun, Iowa using 2015 data</sup>
+</p>
+
+## Overview:
 
 The goal of this work is to predict locations that, should corn be planted there, increase aggregate yield without being biased by current crop locations. The work outlined in this repository is a proof of concept of such a method, using aggregate corn yield data from Iowa.
 
@@ -31,19 +45,6 @@ Google Earth Engine Python API, Rasterio, TensorFlow, Geemap, Multiprocessing, N
 
 ![Visualization of the Corn Yield Dataset](https://github.com/yuvalofek/SPPPACY/blob/master//CornYieldVis.jpg)
 
-## Results
-### Comparison to baseline
-|| MAE | MSE|
-| --- | --- | --- |
-| Baseline| 20.637 | 734.300  |
-| Ours    | 10.703 | 203.604  |
-
-### Pixel-wise yield prediction for counties
-<p align="center">
-  <img src='/crop_valid_2.png' alt='pixel-wise yield prediction for Calhoun, Iowa, in 2015' width=480>
-  <br>
-  <sup>Pixel-wise yield prediction (in bushels/acre) for Calhoun, Iowa using 2015 data</sup>
-</p>
 
 ## Code File Breakdown:
 * **download_from_ee.py -**
